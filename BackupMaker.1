@@ -1,0 +1,39 @@
+.TH BackupMaker.sh 1
+.SH NAME
+BackupMaker.sh - create backup
+.SH SYNOPSIS
+.B BackupMaker.sh
+[ b: ]
+[ d: ]
+[ f: ]
+[ l: ]
+[ h ]
+.SH DESCRIPTION
+BackupMaker.sh is a script capable of making chronic backups of given direction and deleting backups, that are older than given period of time.
+Has UI created with zenity. Uses cron to make chronic backups.
+.SH OPTIONS
+.br
+.BR -b
+DIRECTION_OF_FILES 
+.br 
+Input direction to files of wich you want to create backup.
+.br
+.BR -d
+FINAL_BACKUP_DIRECTION
+.br 
+Input direction where the backup will be saved.
+.br
+.BR -f
+FREQUENCY 
+.br 
+Input frequency of creating backups. Available options are: "Minute", "Hour", "Day"
+.br
+.BR -l
+LIFETIME
+.br 
+Input lifetime of created backup. Available options are: "Minute", "Hour", "Day"	
+.br
+.BR -h
+.br
+ Open man page
+
